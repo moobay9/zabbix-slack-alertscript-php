@@ -14,6 +14,7 @@ zabbix 用 slack 投稿スクリプト
   cd  /path/to/zabbix/alertscripts  
   git clone https://github.com/moobay9/zabbix-slack-alertscript-php.git
   mv zabbix-slack-alertscript-php/config.ini.sample zabbix-slack-alertscript-php/config.ini
+  chmod +x zabbix-slack-alertscript-php/slack.php
 ```
 
   2. zabbix-slack-alertscript-php 内の config.ini を変更
