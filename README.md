@@ -22,8 +22,8 @@ zabbix 用 slack 投稿スクリプト
     * 上記コマンドを参照
 
   2. zabbix-slack-alertscript-php 内の config.ini を変更
-    * url に slack のwebhook 用 URL を記載してください。? よりも前の部分です。
-      * ex) https://hoge.slack.com/services/hooks/incoming-webhook
+    * url に slack のwebhook 用 URL を記載してください。
+      * ex) https://hooks.slack.com/services/XXXXXXXXX/xxxxxxxxx/YYYYYYYYYYYYYYYYYYYYYYYY
     * icon 画像 の URL
     * username は slackc 上で表示される名前です
     * channel に表示させたいチャンネルを記載してください
@@ -40,7 +40,7 @@ zabbix 用 slack 投稿スクリプト
     * 変更したいユーザーを選択
     * メディアのタブから[追加]
       * タイプ : 上記のメディアタイプで入力した名前
-      * 送信先 : webhook 用のトークン (URL の token=XXXXXXX の XXXXXX にあたる部分)
+      * 送信先 : 適当な英数字のランダム文字列
       * ステータス : 有効
       * 他は変更なし
     * [保存] -> [保存]

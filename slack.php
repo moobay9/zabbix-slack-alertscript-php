@@ -15,7 +15,8 @@ $postdata = array('payload' => json_encode(
 	))
 );
 
-$ch = curl_init($config['url'].'?'.http_build_query(array('token' => $token)));
+// $ch = curl_init($config['url'].'?'.http_build_query(array('token' => $token)));
+$ch = curl_init($config['url']);
 curl_setopt($ch, CURLOPT_POST, TRUE);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
 curl_exec($ch);
